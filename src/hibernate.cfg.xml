@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">atishay</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping resource="hibernate/beans/AdminLogin.hbm.xml"/>
+       <mapping resource="hibernate/beans/Desert.hbm.xml"/>
+       <mapping resource="hibernate/beans/Drinks.hbm.xml"/>
+       <mapping resource="hibernate/beans/FirstLogin.hbm.xml"/>
+       <mapping resource="hibernate/beans/MainCourse.hbm.xml"/>
+       <mapping resource="hibernate/beans/OrderTable.hbm.xml"/>
+       <mapping resource="hibernate/beans/Staters.hbm.xml"/>
+       <mapping resource="hibernate/beans/TableNo.hbm.xml"/>
+       <mapping resource="hibernate/beans/ChefBeans.hbm.xml"/>
+       <mapping resource="hibernate/beans/Order.hbm.xml"/>     
+</session-factory>
+</hibernate-configuration>

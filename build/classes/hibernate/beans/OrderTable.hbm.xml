@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="hibernate.beans">
+<class name="OrderTable" table="orderTable">
+<id name="contactNo" column="contactNo" />
+<property name="tableNo" column="tableNo" />
+<property name="customerName" column="customerName" />
+
+<property name="review" column="review" />
+</class>
+</hibernate-mapping>    
+
